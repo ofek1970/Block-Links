@@ -18,6 +18,5 @@ async def on_message(message):
 
     if any(word in msg_content for word in links):
         await message.delete()
-        await message.channel.send("No Links Allowed In This Channel!!")
 
 client.run(os.getenv('TOKEN'))
